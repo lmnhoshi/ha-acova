@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 (2026-11-02)
+
+- Fix links in the README, which were broken when viewed in HACS or Marketplace
+
 ## 0.1.0 (2026-11-02)
 
 First version.

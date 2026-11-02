@@ -11,7 +11,7 @@ This is an unofficial community project. It is not affiliated with or endorsed b
 
 ## Status
 
-Early release, tested on **one radiator**. See [what has been verified](docs/HARDWARE_NOTES.md).
+Early release, tested on **one radiator**. See [what has been verified](https://github.com/lmnhoshi/ha-acova/blob/main/docs/HARDWARE_NOTES.md).
 
 | Item | Tested with |
 | --- | --- |
@@ -53,7 +53,7 @@ Copy `custom_components/acova` into your Home Assistant `custom_components` fold
 3. Accept the discovered radiator under **Settings > Devices & services**, or add **Acova Bluetooth Radiator** there.
 4. Submit the form. When light 2 flashes green, press the 2H boost button within 30 seconds.
 
-If setup reports a pairing failure, [bond by hand](#bonding-by-hand) and add the radiator again. Setup through Home Assistant has not yet been tested from an unpaired state.
+If setup reports a pairing failure, [bond by hand](https://github.com/lmnhoshi/ha-acova#bonding-by-hand) and add the radiator again. Setup through Home Assistant has not yet been tested from an unpaired state.
 
 ## Entities
 
@@ -213,11 +213,11 @@ Delete the radiator under **Settings > Devices & services**, then remove the int
 
 ## Further reading
 
-- [Bluetooth protocol](docs/PROTOCOL.md)
-- [Hardware notes and test results](docs/HARDWARE_NOTES.md)
-- [Contributing](CONTRIBUTING.md)
-- [Changelog](CHANGELOG.md)
+- [Bluetooth protocol](https://github.com/lmnhoshi/ha-acova/blob/main/docs/PROTOCOL.md)
+- [Hardware notes and test results](https://github.com/lmnhoshi/ha-acova/blob/main/docs/HARDWARE_NOTES.md)
+- [Contributing](https://github.com/lmnhoshi/ha-acova/blob/main/CONTRIBUTING.md)
+- [Changelog](https://github.com/lmnhoshi/ha-acova/blob/main/CHANGELOG.md)
 
 ## License
 
-[MIT](LICENSE). Acova and Zehnder are trademarks of their respective owners and are used here only to identify compatible products.
+[MIT](https://github.com/lmnhoshi/ha-acova/blob/main/LICENSE). Acova and Zehnder are trademarks of their respective owners and are used here only to identify compatible products.
