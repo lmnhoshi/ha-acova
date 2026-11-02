@@ -1,0 +1,15 @@
+{
+  "domain": "acova",
+  "name": "Acova Bluetooth Radiator",
+  "after_dependencies": ["schedule"],
+  "bluetooth": [{ "local_name": "TEMPO 3*", "connectable": true }],
+  "codeowners": ["@lmnhoshi"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/lmnhoshi/ha-acova",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/lmnhoshi/ha-acova/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

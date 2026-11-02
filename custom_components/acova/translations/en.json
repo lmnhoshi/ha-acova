@@ -1,0 +1,121 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Choose a radiator",
+        "data": {
+          "address": "Radiator"
+        }
+      },
+      "confirm": {
+        "title": "Pair {name}",
+        "description": "Close the Acova Control app and switch the radiator on. After you submit, if light 2 flashes green, press the 2H boost button (3) within 30 seconds. An already bonded radiator does not need this."
+      }
+    },
+    "progress": {
+      "pairing": "Connecting. When the green light flashes, press the 2H boost button on the radiator."
+    },
+    "error": {
+      "pairing_failed": "Pairing failed. Check that the phone app is closed and the radiator is on, then try again and press the 2H button while the light flashes."
+    },
+    "abort": {
+      "already_configured": "This radiator is already set up.",
+      "no_devices_found": "No radiator found over Bluetooth. Check that it is on and in range of the Bluetooth adapter."
+    }
+  },
+  "entity": {
+    "climate": {
+      "radiator": {
+        "state_attributes": {
+          "preset_mode": {
+            "state": {
+              "comfort": "Comfort",
+              "eco": "Eco",
+              "frost_protection": "Off (frost protection)",
+              "program": "Auto (weekly program)",
+              "pilot_wire": "Pilot wire"
+            }
+          }
+        }
+      }
+    },
+    "switch": {
+      "window_detection": {
+        "name": "Open window detection"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "comfort": "Comfort",
+          "eco": "Eco",
+          "frost_protection": "Off (frost protection)",
+          "program": "Auto (weekly program)",
+          "pilot_wire": "Pilot wire"
+        }
+      }
+    },
+    "number": {
+      "temperature": {
+        "name": "Temperature"
+      }
+    },
+    "button": {
+      "sync_schedule": {
+        "name": "Sync schedule to radiator"
+      },
+      "refresh": {
+        "name": "Refresh from radiator"
+      }
+    },
+    "sensor": {
+      "last_read": {
+        "name": "Last read"
+      },
+      "auto_comfort_target": {
+        "name": "Auto comfort target"
+      },
+      "auto_eco_target": {
+        "name": "Auto eco target"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Weekly schedule",
+        "description": "Blocks in this Schedule helper become comfort hours and everything else becomes eco. Times are widened to whole hours.",
+        "data": {
+          "schedule_entity": "Schedule helper"
+        }
+      }
+    }
+  },
+  "services": {
+    "sync_schedule": {
+      "name": "Sync schedule",
+      "description": "Writes the chosen Schedule helper to the radiator.",
+      "fields": {
+        "days": {
+          "name": "Days",
+          "description": "Days to write. Leave empty for the whole week."
+        }
+      }
+    }
+  },
+  "selector": {
+    "days": {
+      "options": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      }
+    }
+  }
+}

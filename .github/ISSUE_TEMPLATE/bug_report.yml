@@ -1,0 +1,34 @@
+name: Problem report
+description: Something doesn't work with your radiator
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Radiator model and firmware
+      description: The firmware is on the device page.
+    validations:
+      required: true
+  - type: input
+    id: homeassistant
+    attributes:
+      label: Home Assistant version
+    validations:
+      required: true
+  - type: input
+    id: adapter
+    attributes:
+      label: Bluetooth adapter or proxy
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Debug log
+      description: Remove your Bluetooth addresses before posting.
+      render: text

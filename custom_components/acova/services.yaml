@@ -1,0 +1,16 @@
+sync_schedule:
+  fields:
+    days:
+      required: false
+      selector:
+        select:
+          multiple: true
+          translation_key: days
+          options:
+            - monday
+            - tuesday
+            - wednesday
+            - thursday
+            - friday
+            - saturday
+            - sunday
